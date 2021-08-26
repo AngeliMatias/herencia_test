@@ -1,0 +1,19 @@
+import a.*
+import b.*
+import c.*
+import wollok.game.*
+
+program abc {
+	const objetoB = new LetterB()
+	game.width(15)
+	game.height(15)
+	game.addVisual(objetoB)
+	keyboard.b().onPressDo({
+		=> game.say(objetoB, objetoB.devolverLetraB())
+	})
+	keyboard.a().onPressDo({
+		=> game.say(objetoB, objetoB.devolverLetraA())
+	})
+	game.start()
+	
+}
