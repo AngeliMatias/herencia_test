@@ -1,15 +1,18 @@
 import a.*
 import b.*
 import c.*
+import wollok.game.*
 
 describe "a" {
+	const letterA = new LetterA()
+	const letterB = new LetterB()
 	test "testA" {
-		assert.equals(letraD.devolverLetraC(), "c")
+		assert.equals(letterA.position(), game.at(5,5))
 	}
 	test "testB" {
-		assert.equals(letraD.devolverLetraB(), "b")
+		assert.equals(letterB.position(), game.at(5,5))
 	}
 	test "testD" {
-		assert.equals(letraD.devolverLetraD(), "d")
+		assert.equals(letterC.position(), game.at(5,5))
 	}
 }
