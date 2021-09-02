@@ -1,17 +1,15 @@
 import a.*
 import b.*
+import c.*
 
 describe "a" {
-	const objetoA = new LetterA()
-	const objetoB = new LetterB()
-	
 	test "testA" {
-		assert.equals(objetoA.devolverLetraA(), "a")
+		assert.equals(letraD.devolverLetraC(), "c")
 	}
-	test "testB-A" {
-		assert.equals(objetoB.devolverLetraA(), "a")
+	test "testB" {
+		assert.equals(letraD.devolverLetraB(), "b")
 	}
-	test "testB-B" {
-		assert.equals(objetoB.devolverLetraB(), "b")
+	test "testD" {
+		assert.equals(letraD.devolverLetraD(), "d")
 	}
 }
